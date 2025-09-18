@@ -1,0 +1,5 @@
+{
+  "apiKey": "your_factchat_api_key_here",
+  "host": "localhost",
+  "port": 0
+}
