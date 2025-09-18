@@ -1,18 +1,45 @@
 {
-  "name": "factchat-anthropic-proxy",
+  "name": "fchat-claude",
   "version": "1.0.0",
-  "description": "",
+  "description": "Claude CLI를 FactChat API와 연결하는 프록시 서버",
   "main": "dist/index.js",
+  "bin": {
+    "fchat-claude": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsx watch src/index.ts",
     "dev:nodemon": "nodemon --exec tsx src/index.ts",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "claude",
+    "anthropic",
+    "factchat",
+    "cli",
+    "proxy",
+    "ai"
+  ],
+  "author": "ksi123456ab@gmail.com",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlphaBs/claude-code-factchat.git"
+  },
+  "homepage": "https://github.com/AlphaBs/claude-code-factchat#readme",
+  "bugs": {
+    "url": "https://github.com/AlphaBs/claude-code-factchat/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@fastify/cors": "^11.1.0",
     "dotenv": "^17.2.2",

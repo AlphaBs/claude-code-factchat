@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import pino from "pino";
 import { startServer } from "./server";
 import dotenv from "dotenv";
